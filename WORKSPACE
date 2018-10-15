@@ -61,8 +61,7 @@ ts_setup_workspace()
 #
 # This exposes dependencies from package.json under @npm//...
 # We can run binaries provided by deps, and, more importantly, make them available as deps to
-# targets we write. This won't work until we actually create yarn.lock by adding dependencies,
-# which is the next thing to do.
+# targets we write. This won't work until we actually create yarn.lock by adding dependencies.
 #
 # ref: https://github.com/bazelbuild/rules_nodejs/blob/0.15.0/internal/npm_install/npm_install.bzl#L140
 ####
@@ -77,7 +76,8 @@ yarn_install(
 # Add Go support.
 #
 # This isn't needed for core bazel/typescript support, but it is needed for ts_devserver, because
-# the server binary just happens to be written in Go.
+# the server binary just happens to be written in Go. I couldn't ultimately make ts_devserver work,
+# so this is not really needed at all, but keeping it in case the situation changes.
 ####
 load("@io_bazel_rules_go//go:def.bzl", "go_rules_dependencies", "go_register_toolchains")
 go_rules_dependencies()
