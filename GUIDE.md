@@ -55,7 +55,7 @@ See:
 Next, an Express server to expose the above library as an endpoint.
 
 See:
-- [`src/app/main.ts`](src/lib/main.ts) for the entry point implementation
+- [`src/app/main.ts`](src/app/main.ts) for the entry point implementation
 - [`src/app/BUILD`](src/app/BUILD) for the library and binary rules
 
 ## Client
