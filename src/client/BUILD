@@ -2,13 +2,13 @@ load("@build_bazel_rules_nodejs//:defs.bzl", "rollup_bundle")
 
 package(default_visibility = ["//visibility:public"])
 
-
 ####
 # Would be nice to do this, but it's basically blocked by this issue:
 # https://github.com/bazelbuild/rules_typescript/issues/103
 #
 # A lot of additional custom work would be needed to make this useful.
 ####
+
 # load("@build_bazel_rules_typescript//:defs.bzl", "ts_devserver")
 # ts_devserver(
 #     name = "dev",
