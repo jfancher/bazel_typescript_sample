@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    // (Whatever language config options we want)
+    "strict": true,
+    // Make the editor understand that bazel_typescript_sample refers to the workspace root.
+    // Bazel will do this regardless, this is only for the editor. It will also produce annoying
+    // warnings on bazel build, but there doesn't seem to be anything we can do about that.
+    "baseUrl": ".",
+    "paths": {
+      "bazel_typescript_sample/*": [
+        "./*"
+      ],
+    }
+  },
+}
