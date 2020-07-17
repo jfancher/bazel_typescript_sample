@@ -15,7 +15,7 @@
     "@types/express": "^4.16.0",
     "@types/lodash": "^4.14.117",
     "express": "^4.16.4",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "source-map-support": "^0.5.9"
   }
 }
